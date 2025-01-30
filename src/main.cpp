@@ -5,6 +5,7 @@
 #include "display_manager.h"
 #include "FSM_sensor_manager.h"
 #include "wifi_manager.h"
+#include "relay_manager.h"
 
 void setup() {
     Serial.begin(SERIAL_BAUDRATE);
@@ -15,9 +16,8 @@ void setup() {
     //--Initialize OLED Display
     initDisplay();
 
-    //--Set the relay pin as an output and turn it off at startup
-    pinMode(RELAY_PIN, OUTPUT);
-    digitalWrite(RELAY_PIN, LOW); //--Relay initially off
+    //--initialize relay
+    initrelay();
 
     //--Initialize WiFi
     initWiFi();

@@ -3,7 +3,8 @@
 
 //--Includes
 #include "persist.h"
-#include <Wifi.h>
+#include "functions.h"
+#include <WiFi.h>
 
 void initWiFi();
 bool isWiFiConnected();
