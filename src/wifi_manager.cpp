@@ -5,7 +5,8 @@
 extern Config config;
 
 void initWiFi() {
-    WiFi.begin(config.ssid, config.ssid_pass);
+    WiFi.begin(config.ssid.c_str(), config.ssid_pass.c_str());
+
 
     unsigned long startAttemptTime = millis();
 
