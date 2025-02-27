@@ -6,9 +6,6 @@ void conf_read(void){
     ArduinoJson::StaticJsonDocument<1024> parse_comm;
     const char *ssid;
     const char *ssid_pass;
-    uint8_t irr_hour;
-    uint8_t irr_minute;
-    uint8_t irr_time;
     uint32_t st;
     Serial.println(F("Put json config file..."));
     st=millis();

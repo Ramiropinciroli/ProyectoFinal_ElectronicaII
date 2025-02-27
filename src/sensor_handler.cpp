@@ -1,8 +1,9 @@
 #include "sensor_handler.h"
 
+extern Config config;
+
 //--Define thresholds and constants
 #define DETECTION_THRESHOLD 10 //--Threshold in cm to detect an object
-#define MAX_DISTANCE 400       //--Maximum distance the sensor can detect
 #define NO_OBJECT -1           //--Value when no object is detected
 
 //--Define relay activation time
@@ -33,7 +34,7 @@ long measureDistance(int trigPin, int echoPin) {
     }
 
     long distance = (duration / 2) * 0.0343; //--Calculate distance in cm
-    if (distance > MAX_DISTANCE) {
+    if (distance > config.max_distance) {
         return NO_OBJECT; //--Distance out of range
     }
 

@@ -27,6 +27,7 @@
 struct Config {
   String ssid;
   String ssid_pass;
+  int max_distance;
 };
 
 

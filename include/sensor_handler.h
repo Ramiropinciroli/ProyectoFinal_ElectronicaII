@@ -5,6 +5,8 @@
 #include <Arduino.h>
 #include "config.h"
 #include "display_manager.h"
+#include "functions.h"
+#include "persist.h"
 
 #define VEHICLE_ENTRY 0
 #define VEHICLE_EXIT  1
