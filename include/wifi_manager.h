@@ -3,6 +3,7 @@
 
 //--Includes
 #include "persist.h"
+#include "config.h"
 #include "functions.h"
 #include <WiFi.h>
 

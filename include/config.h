@@ -27,9 +27,6 @@
 struct Config {
   String ssid;
   String ssid_pass;
-  uint8_t irr_hour;
-  uint8_t irr_minute;
-  uint8_t irr_time;
 };
 
 

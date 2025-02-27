@@ -2,8 +2,10 @@
 
 #define WIFI_TIMEOUT 20000 //--Maximum time to try to connect (in ms)
 
+extern Config config;
+
 void initWiFi() {
-    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+    WiFi.begin(config.ssid, config.ssid_pass);
 
     unsigned long startAttemptTime = millis();
 

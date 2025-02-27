@@ -6,9 +6,11 @@
 #include "FSM_sensor_manager.h"
 #include "wifi_manager.h"
 #include "relay_manager.h"
-
+Config config;
 void setup() {
     Serial.begin(SERIAL_BAUDRATE);
+
+    load_config();
 
     //--Initialize ultrasonic sensors
     initSensors();

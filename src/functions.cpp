@@ -30,15 +30,7 @@ void conf_read(void){
                 config.ssid_pass=ssid_pass;
                 save_config(DEVICE_CONFIG);
             }
-            if(parse_comm.containsKey("irr")){
-                irr_hour=parse_comm["irr"]["irr_hour"];
-                irr_minute=parse_comm["irr"]["irr_minute"];
-                irr_time=parse_comm["irr"]["irr_time"];
-                config.irr_hour=irr_hour;
-                config.irr_minute=irr_minute;
-                config.irr_time=irr_time;
-                save_config(IRR_CONFIG);
-            }
+
             Serial.println(F("Configuration changed!"));
             return;
         }
