@@ -3,7 +3,7 @@
 extern Config config;
 
 //--Define thresholds and constants
-#define DETECTION_THRESHOLD 10 //--Threshold in cm to detect an object
+#define DETECTION_THRESHOLD 100 //--Threshold in cm to detect an object
 #define NO_OBJECT -1           //--Value when no object is detected
 
 //--Define relay activation time
