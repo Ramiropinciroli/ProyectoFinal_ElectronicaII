@@ -21,6 +21,7 @@ void save_config(uint8_t name){
     Serial.println("Config saved:");
     Serial.println(config.ssid);
     Serial.println(config.ssid_pass);
+    Serial.println(config.max_distance);
 }
 
 void load_config(void){

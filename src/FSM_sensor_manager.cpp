@@ -1,4 +1,5 @@
 #include "FSM_sensor_manager.h"
+#include "publish.h"
 
 //--Global variable for current state
 SystemState currentState = IDLE;
@@ -65,10 +66,16 @@ void processEntry() {
     digitalWrite(RELAY_PIN, HIGH);
     relay_active = true;
     relay_timer_start = millis();
+
+    //--Publish updated vehicle count
+    publishvehicle_count(vehicle_count);
 }
 
 //--Process vehicle exit
 void processExit() {
     vehicle_count = max(0, vehicle_count - 1);
     Serial.println("Vehicle exited");
+
+    //--Publish updated vehicle count
+    publishvehicle_count(vehicle_count);
 }
