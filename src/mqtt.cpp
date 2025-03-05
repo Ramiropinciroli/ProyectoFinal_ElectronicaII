@@ -43,3 +43,10 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
     Serial.print("[DEBUG RPC] Topico de pregunta:");Serial.println(topic_rpc_req);
     Serial.print("[DEBUG RPC] Mensaje de pregunta:");Serial.println(msg_rpc_req);
 }
+
+void handleMQTTConnection() {
+    if (!mqttClient.connected()) {
+        reconnectMQTT();
+    }
+    mqttClient.loop(); 
+}

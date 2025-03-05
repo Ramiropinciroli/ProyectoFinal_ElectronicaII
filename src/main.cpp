@@ -40,10 +40,7 @@ void loop() {
     handleWiFiConnection();
 
     //--Ensure MQTT stays connected
-    if (!mqttClient.connected()) {
-        reconnectMQTT();
-    }
-    mqttClient.loop(); // Maintains communication with the broker.
+    handleMQTTConnection();
     
     //--Run the FSM
     FSM_sensor_run();
