@@ -35,7 +35,7 @@ Proyecto final
 ## Introducción
 Una cochera de la ciudad de Rosario consta de una entrada y una salida.
 La compañía aseguradora necesita un dispositivo capaz de contabilizar en todo momento la cantidad de vehículos que se encuentran en el interior del recinto. 
- - ![imageningresocochera](./figures/Imageningresocochera.png)
+![imagen4](./figures/imagen4.png)
 Además, se decidió que dicho dispositivo también funcione como un control de iluminación, permitiendo que cuando ingrese un vehículo automáticamente se enciendan las luces del interior.
 Para tales fines se implementa un sistema para contar vehículos utilizando un ESP32, sensores ultrasónicos *HC-SR04, un *display OLED SSD1306 y un relé para controlar una luz de 220V. 
 
@@ -48,10 +48,10 @@ En la figura se aprecia el circuito de este trabajo práctico, el led conectado 
 ![Circuito](./figures/circuito.png)
 
 ## Diagrama en bloques Firmware 
-- ![Firmware](./figures/Firmware.png)
+![Firmware](./figures/Firmware.png)
 
 ## Diagrama en bloques Hardware 
-- ![Hardware](./figures/Hardware.png)
+![Hardware](./figures/Hardware.png)
 
 ## Requisitos del proyecto
 -	Contabilización de los vehículos en el interior mediante el sensado del ingreso y egreso de estos.
@@ -119,11 +119,11 @@ node-red
 
 A continuación, se presentan imagenes y videos de la interfaz y del dispositivo en funcionamiento.
 
-- ![imagen1](./figures/imagen1.jpg)
-- ![imagen2](./figures/imagen2.jpg)
-- ![imagen3](./figures/imagen3.jpg)
-- ![Dispositivo](./figures/funcionamiento.gif)
-- ![Interfaz de monitoreo del sistema](./figures/dashboard.gif)
+![imagen1](./figures/imagen1.png)
+![imagen2](./figures/imagen2.png)
+![imagen3](./figures/imagen3.png)
+![Dispositivo](./figures/funcionamiento.gif)
+![Interfaz de monitoreo del sistema](./figures/dashboard.gif)
 
 ---
 ## Estructura y funcionamiento del codigo
