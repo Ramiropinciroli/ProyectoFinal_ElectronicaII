@@ -5,6 +5,7 @@
 #include "sensor_handler.h"
 #include "display_manager.h"
 #include "config.h"
+#include "publish.h"
 #include <Arduino.h>
 
 //--Define system states
