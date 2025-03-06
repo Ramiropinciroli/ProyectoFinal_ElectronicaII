@@ -35,7 +35,9 @@ Proyecto final
 ## Introducción
 Una cochera de la ciudad de Rosario consta de una entrada y una salida.
 La compañía aseguradora necesita un dispositivo capaz de contabilizar en todo momento la cantidad de vehículos que se encuentran en el interior del recinto. 
+
 ![imagen4](./figures/imagen4.png)
+
 Además, se decidió que dicho dispositivo también funcione como un control de iluminación, permitiendo que cuando ingrese un vehículo automáticamente se enciendan las luces del interior.
 Para tales fines se implementa un sistema para contar vehículos utilizando un ESP32, sensores ultrasónicos *HC-SR04, un *display OLED SSD1306 y un relé para controlar una luz de 220V. 
 
@@ -122,7 +124,7 @@ A continuación, se presentan imagenes y videos de la interfaz y del dispositivo
 ![imagen1](./figures/imagen1.png)
 ![imagen2](./figures/imagen2.png)
 ![imagen3](./figures/imagen3.png)
-![Dispositivo](./figures/funcionamiento.gif)
+![Funcionamiento](./figures/funcionamiento.gif)
 ![Interfaz de monitoreo del sistema](./figures/dashboard.gif)
 
 ---
