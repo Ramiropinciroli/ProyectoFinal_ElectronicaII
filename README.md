@@ -13,16 +13,15 @@ Proyecto final
 1. [Introducción](#introducción)
 2. [Circuito](#circuito)
 3. [Requisitos del Proyecto](#requisitos-del-proyecto)
-4. [Diagrama en bloques Firmware ](#diagrama-en-bloques-firmware) 
-5. [Diagrama en bloques Hardware ](#diagrama-en-bloques-Hardware) 
-6. [Listado de materiales](#listado-de-materiales)
-7. [Logica del programa](#logica-del-programa) 
-8. [Configuración MQTT y Dashboard en Node-RED](#configuracion-mqtt-y-dashboard-en-node-red)
+4. [Diagrama en bloques Hardware ](#diagrama-en-bloques-Hardware) 
+5. [Listado de materiales](#listado-de-materiales)
+6. [Logica del programa](#logica-del-programa) 
+7. [Configuración MQTT y Dashboard en Node-RED](#configuracion-mqtt-y-dashboard-en-node-red)
    - [Instalación de Node-RED](#instalacion-de-node-red)
    - [Configuración del Broker MQTT](#configuracion-del-broker-mqtt)
    - [Diseño del Dashboard](#diseno-del-dashboard)
-9. [Dispositivo e interfaz](#dispositivo-e-interfaz)   
-10. [Estructura y funcionamiento del código](#estructura-y-funcionamiento-del-codigo)
+8. [Dispositivo e interfaz](#dispositivo-e-interfaz)   
+9. [Estructura y funcionamiento del código](#estructura-y-funcionamiento-del-codigo)
    - [Archivos de configuración](#archivos-de-configuración)
    - [Manejo de sensores y relé](#manejo-de-sensores-y-relé)
    - [Máquina de estados](#máquina-de-estados)
@@ -49,8 +48,6 @@ En la figura se aprecia el circuito de este trabajo práctico, el led conectado 
 
 ![Circuito](./figures/circuito.png)
 
-## Diagrama en bloques Firmware 
-![Firmware](./figures/Firmware.png)
 
 ## Diagrama en bloques Hardware 
 ![Hardware](./figures/Hardware.png)
